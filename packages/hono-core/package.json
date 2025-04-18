@@ -1,0 +1,22 @@
+{
+  "name": "@packages/hono-core",
+  "private": true,
+  "exports": {
+    "./http-server": "./src/http-server.ts",
+    "./grpc-server": "./src/grpc-server.ts"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hono/zod-validator": "^0.4.3",
+    "@packages/common": "workspace:*",
+    "@packages/mongodb-connector": "workspace:*",
+    "@packages/ajv-decorator": "workspace:*",
+    "hono": "^4.7.5",
+    "zod": "^3.24.2"
+  }
+}
